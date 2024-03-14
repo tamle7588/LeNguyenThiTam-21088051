@@ -1,0 +1,243 @@
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body{
+    /* background: linear-gradient(#b8abea,#907cd4,#6c4be2); */
+    background: linear-gradient(24deg, #f1cfed 30%, #89faff 100%,#ffc6f7 35%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 60px 20px 30px 20px;
+    height: 620px;
+    width: 500px;
+    border-radius: 10px;
+    background: linear-gradient(to top left, rgb(255, 222, 245) 48%, rgb(205, 246, 249) 10%);
+    overflow: hidden;
+
+}
+.box-login{
+    position: absolute;
+    width: 85%;
+    left: 27px;
+    transition: .5s ease-in-out;
+}
+
+.top-header{
+    text-align: center;
+    margin: 60px 20;
+
+}
+
+.top-header h1{
+    color: #383737;
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+.top-header small{
+  position: relative;
+  top:-0.2cm;
+  font-size: 100%;
+}
+.input-group{
+     width: 100%;
+    
+}
+.input-field{
+    margin: 20px 0;
+    position: relative;
+}
+
+.input-box{
+    width: 70%;
+    height: 50px;
+    font-size: 15px;
+    border: none;
+    border-radius: 7px;
+    background: #ffff;
+    outline: none;
+    position: relative;
+    left: 2.0cm;
+    padding-left: 40px;
+}
+.input-field label{
+    position: absolute;
+    left: 120px;
+    top: 15px;
+    font-size: 15px;
+    transition: .3s ease-in-out;
+}
+.input-box:focus ~ label,.input-box:valid ~ label{
+    top: 2px;
+    font-size: 10px;
+    color: #434343;
+    font-weight: 500;
+}
+.input-submit{
+    width:70%;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    background: #ffff;
+    color: #191919;
+    box-shadow: 0px 4px 20px rgba(62, 9, 9, 0.144);
+    cursor: pointer;
+    transition: .4s;
+    position: relative;
+    left: 2.0cm;
+    top:0.2cm;
+}
+.input-submit:hover{
+    background:  #bc3e3e;
+    box-shadow: 0px 4px 20px rgba(62, 9, 9, 0.32);
+}
+.forgot{
+    font-size: 13px;
+    font-weight: 500;
+    position: relative;
+    left: 2.7cm;
+    bottom: -1.4cm;
+    
+}
+.forgot-word {
+    display: block;
+    position: relative;
+    top:0.7cm;
+    left: 0.3cm;
+    
+}
+
+.forgot-link span {
+    display: block;
+}
+
+
+.forgot a{
+    text-decoration: none;
+    color: #424141;
+    display: block;
+}
+
+#btn{
+    position: absolute;
+    bottom: 0px;   
+    left: 0px;
+    width: 145px;
+    height: 50px;
+    background: #cccccd;
+    border-radius: 10px;
+    box-shadow: 2px 0px 12px rgba(0, 0, 0, 0.1);
+    transition: .5s ease-in-out;
+}
+.eye-area{
+    position: absolute;
+    top: 25px;
+    right: 1.7cm;
+}
+.eye-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+}
+i{
+    position: absolute;
+    color: #444444;
+    cursor: pointer;
+}
+.input-box::placeholder {
+    color: #999; /* Màu chữ của placeholder */
+    font-style: italic; /* Kiểu font chữ của placeholder */
+    font-size: 14px; /* Kích thước font chữ của placeholder */
+    position: relative;
+    
+}
+
+.icon {
+  position: relative;
+  top:0.39cm;
+  right: -2.3cm;
+  z-index: 1;
+  font-size:  0.4cm;
+}
+.key1{
+  position: relative;
+  top:3cm;
+  right:-1.7cm;
+  z-index: 1;
+  font-size: 0.55cm;
+  transform:rotatex(180deg);
+  
+  
+}
+.key1{
+    transform: rotate(30deg); 
+}
+.login__register{
+    background-color: #86dce3;
+    position: relative;
+    display: flex;
+    width: 34%;
+    height: 1.23cm;
+    bottom: -0.3cm;
+    right:-5.8cm;
+    border-radius: 7px;
+    
+}
+.login__register a{
+    font-size: 15px;
+    color: #000;
+  
+    text-decoration: none;
+    position: relative;
+    bottom: -0.35cm;
+    right: -0.9cm;
+}
+.login__register i{
+    position: relative;
+    left: 1cm;
+    bottom: -0.3cm;
+}
+.login__register:hover{
+    background:  #c8c6c6;
+    box-shadow: 0px 4px 20px rgba(62, 9, 9, 0.32);
+}
+
+#eye,#eye-2{
+    opacity: 1;
+}
+#eye-slash,#eye-slash-2{
+    opacity: 0;}
+@media only screen and (max-width: 576px){
+    .box{
+        margin: 0 5px;
+    }
+    #btn{
+        position: absolute;
+        width: 153px;
+    }
+}

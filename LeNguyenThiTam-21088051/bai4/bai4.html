@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bai4.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TÍNH CHỈ SỐ BMI</h1>
+        <p class="a">Nhập cân nặng? (kg)</p>
+        <input type="number" id="cannang">
+        <p class="a">Nhập chiều cao? (m)</p>
+        <input type="number" id="chieucao">
+        <p class="a">Chọn loại tuổi?</p>
+        <select id="loaituoi" name="loaituoi">
+            <option value="truongthanh">Trung niên</option>
+            <option value="trungnien">Trung niên, Già lớn tuổi</option>
+            <option value="gia-lontuoi">Già, lớn tuổi</option>
+        </select>
+    <div class=" button">
+        <button id="btn" onclick="check()">TÍNH BMI</button></div>
+        
+        <!-- Thêm phần hiển thị kết quả -->
+        <div class="result" id="result-container">
+            <h2>KẾT QUẢ BMI</h2>
+            <p id="bmi-value"></p>
+            <p id="bmi-category"></p>
+        </div>
+
+        <!-- Thêm phần nhúng tài liệu về bệnh béo phì -->
+        <object data="document_about_obesity.pdf" type="application/pdf" width="100%" height="600px">
+            <p>Xem tài liệu về sức khỏe  <a href="https://ecopharma.com.vn/gan-nhiem-mo-o-nguoi-gia/">tại đây</a>.</p>
+        </object>
+    </div>
+    <script src="bai4.js"></script>
+</body>
+</html>

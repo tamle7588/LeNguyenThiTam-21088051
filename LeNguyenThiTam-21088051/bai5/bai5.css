@@ -1,0 +1,96 @@
+body {
+    color: rgb(142, 142, 142);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .login-container {
+    text-align: left;
+    width: 320px;
+  }
+  
+  .login-box {
+    background-color: rgb(37, 27, 27);
+    padding: 20px;
+    border-radius: 10px;
+    display: block;
+    align-items: left;
+  }
+
+  .login-icon {
+    font-size: 22px; /* Kích thước của icon */
+    margin-right: 5px;
+  }
+
+.login-box span{
+  position: absolute;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.input-group input {
+ 
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+  background-color: #555;
+  color: white;
+}
+
+.input-group input::placeholder {
+  color: white;
+}
+
+.icon {
+  position: absolute;
+  right: 45%;
+  color: #c5c1c1;
+}
+
+.fa-key{
+  position: absolute;
+  right: 44%;
+}
+
+#showPasswordBtn {
+  padding: 6px 10px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+#loginBtn {
+  width: 50px;
+  height: 80px;
+  background-color: #d71616;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: flex-end;
+  position: absolute;
+}
+
+.lock-icon {
+  font-size: 20px;
+}
+
+

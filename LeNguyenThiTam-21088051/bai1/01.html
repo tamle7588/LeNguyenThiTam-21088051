@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="01.CSS">
+    <title>Giải phương trình bậc 1</title>
+</head>
+<body>
+    <div class="container">
+        <h2>GIẢI PHƯƠNG TRÌNH BẬC 1</h2>
+        <form id="equationForm">
+            <label for="coefA"></label>
+            <input type="number" id="coefA" placeholder="Hệ số a"  required>
+            <br>
+            <label for="coefB"></label>
+            <input type="number" id="coefB"placeholder="Hệ số b" required>
+            <br>
+            <button type="button" onclick="solveEquation()">Giải Phương Trình</button>
+        </form>
+        <div class ="title">
+            <p>KẾT QUẢ</p>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script src="01.JS"></script>
+</body>
+</html>
